@@ -1,0 +1,22 @@
+<!-- 
+  This file is used to control the output to console. 
+  The configuration is set up to stop debug messages from Serenity.
+ -->
+<configuration>
+	<appender name="STDOUT"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<File name="File" fileName="admin.log">
+			<encoder>
+				<pattern>
+					%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg ..................%n
+				</pattern>
+			</encoder>
+		</File>
+	</appender>
+	<logger name="root" level="DEBUG" />
+	<logger name="net.serenitybdd" level="INFO" />
+	<logger name="net.thucydides" level="INFO" />
+	<root level="INFO">
+		<appender-ref ref="STDOUT" />
+	</root>
+</configuration>
