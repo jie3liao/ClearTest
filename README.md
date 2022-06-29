@@ -26,10 +26,10 @@ Use an IDE like Eclipse to import this Maven project.
 Go to the project directory.
 
 For Ikea automation test, run 
-mvn clean verify -Dcucumber.filter.tags="@AddToBag"
+* mvn clean verify -Dcucumber.filter.tags="@AddToBag"
 
 For datausa API test, run
-mvn clean verify -Dcucumber.filter.tags="@GetUSAData"
+* mvn clean verify -Dcucumber.filter.tags="@GetUSAData"
 
 For the name utility, the file is NameUtility.java in the package "cc.explore". Run
 * cd src\test\java
